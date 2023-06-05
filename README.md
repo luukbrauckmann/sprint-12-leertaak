@@ -1,9 +1,8 @@
 <h1>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660" style="height: 1em;">
-    <img alt="logo" src="https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660" style="height: 1em;">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660">
+    <img alt="logo" src="https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660">
   </picture>
-  <span> Omniplan</span>
 </h1>
 
 <h2 id="inhoud">📦 Inhoud</h2>

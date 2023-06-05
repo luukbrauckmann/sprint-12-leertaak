@@ -1,33 +1,44 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+<h1>
+  <picture style="height: 1em;">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660">
+    <img alt="logo" src="https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660">
+  </picture>
+  <span> Omniplan</span>
+</h1>
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+<h2 id="inhoud">📦 Inhoud</h2>
 
-## Inhoudsopgave
+1. [Beschrijving](#%E2%84%B9%EF%B8%8F-beschrijving)
+2. [Gebruik](#%EF%B8%8F-gebruik)
+3. [Kenmerken](#-kenmerken)
+4. [Installatie](#-installatie)
+5. [Bronnen](#-bronnen)
+6. [Licenties](#-bronnen)
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+<h2 id="beschrijving">ℹ️ Beschrijving</h2>
 
-## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+>
 
-## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+<h2 id="gebruik">🖥️ Gebruik</h2>
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+>
 
-## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+<h2 id="kenmerken">✨ Kenmerken</h2>
 
-## Bronnen
+De website wordt server side gerendered door middel van NodeJS, ExpressJS & EJS. Het is gebouwd in HTML, CSS & JS.
 
-## Licentie
+<h2 id="installatie">📥 Installatie</h2>
+
+Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal. Zorg dat je in het juiste pad zit van dit project. Voer de commando `npm install` uit. Wanneer deze klaar is kun je de applicatie starten door de commando `npm run dev` uit te voeren. De applicatie wordt gehost op http://localhost:3000/
+
+<h2 id="bronnen">🌍 Bronnen</h2>
+
+- [Instructies](docs/INSTRUCTIONS.md)
+- [NodeJS](https://nodejs.org/)
+- [ExpressJS](https://expressjs.com/)
+- [EJS](https://ejs.co/)
+- [nodemon](https://nodemon.io/)
+
+<h2 id="licenties">🪪 Licenties</h2>
 
 This project is licensed under the terms of the [MIT license](./LICENSE).

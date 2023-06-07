@@ -7,6 +7,7 @@ Fonts
   src: url("../fonts/Lato/Lato-light.ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Merriweather Light";
   src: url("../fonts/Merriweather/Merriweather-Light.ttf");
@@ -23,15 +24,29 @@ Variables
   --font-family: "Lato Light", Arial, sans-serif;
   --spacing: 1rem;
 
-  --c-primary: #b9005f;
-	--c-secondart: #f59e0b;
+  --c-primary: #324E64;
+	--c-secondary: #8CABC5;
+	--c-accent: #22B5E8;
 
-  --c-success: rgb(34, 197, 94);
-  --c-info: #3b82f6;
-  --c-warning: #f59e0b;
-  --c-danger: rgb(239, 68, 68);
+	--c-support-1: #7DD1A1;
+	--c-support-2: #E3F1FF;
+	--c-support-3: #EC583B;
+
+	--c-grayscale-1: #949494;
+	--c-grayscale-2: #D9DEE2;
+	--c-grayscale-3: #F3F5F7;
+
+  --c-success: #3AC47D;
+  --c-success-light: #C6FFBA;
+
+  --c-warning: #FFAF00;
+  --c-warning-light: #FFE8CC;
+
+  --c-danger: #E82222;
+  --c-danger-light: #F0B9B9;
 
   --c-background: #f3f3f3;
+	--c-text: #334F63;
 
   --body-padding: calc(((100vw - var(--max-screen-width)) / 2) + var(--spacing));
   --max-screen-width: 100%;
@@ -78,7 +93,7 @@ html,
 body {
   font-size: var(--font-size);
   font-family: var(--font-family);
-  color: var(--text-color);
+  color: var(--c-text);
 }
 
 @media (min-width: 36rem) {

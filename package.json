@@ -1,0 +1,38 @@
+{
+	"name": "sprint-12-leertaak",
+	"version": "1.0.0",
+	"description": "<h1>   <picture>     <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660\">     <img alt=\"logo\" src=\"https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/f2e70cd3-dd39-4661-849d-1856e0e67660\">   </picture> </h1>",
+	"main": "index.js",
+	"type": "module",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/luukbrauckmann/sprint-12-leertaak.git"
+	},
+	"keywords": [
+		"Node",
+		"Express",
+		"EJS"
+	],
+	"author": "Luuk Brauckmann",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/luukbrauckmann/sprint-12-leertaak/issues"
+	},
+	"homepage": "https://github.com/luukbrauckmann/sprint-12-leertaak#readme",
+	"dependencies": {
+		"compression": "^1.7.4",
+		"ejs": "^3.1.9",
+		"express": "^4.18.2",
+		"helmet": "^7.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}

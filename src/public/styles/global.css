@@ -22,7 +22,9 @@ Variables
 :root {
   --font-size: 1em;
   --font-family: "Lato Light", Arial, sans-serif;
-  --spacing: 1rem;
+
+  --spacing-block: 1.5rem;
+  --spacing-inline: .5rem;
 
   --c-primary: #324E64;
 	--c-secondary: #8CABC5;

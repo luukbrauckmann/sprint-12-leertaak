@@ -1,6 +1,7 @@
 import express from 'express'
 import compression from 'compression'
 import helmet from 'helmet'
+import fontawesome from './lib/fontawesome.js'
 
 import startPage from './routes/start-page.js'
 
@@ -17,6 +18,7 @@ server.use(helmet())
 server.use(express.static('src/public'))
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
+server.use(fontawesome())
 
 /**
  * Routes

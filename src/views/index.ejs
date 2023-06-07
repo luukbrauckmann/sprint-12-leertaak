@@ -24,6 +24,9 @@
     <% for (let script of scripts) { %>
     <script src="/scripts<%- script %>" defer></script>
     <% } %>
+
+    <!-- prettier-ignore -->
+    <%- `<style>${fas()}</style>` %>
   </head>
 
   <body>

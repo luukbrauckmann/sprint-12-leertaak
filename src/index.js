@@ -3,7 +3,11 @@ import compression from 'compression'
 import helmet from 'helmet'
 import fontawesome from './lib/fontawesome.js'
 
-import startPage from './routes/start-page.js'
+import startPage from './routes/start.page.js'
+import newRequestPage from './routes/new-request.page.js'
+import newRequestFollowUpPage from './routes/new-request-follow-up.page.js'
+import requestsPage from './routes/requests.page.js'
+import requestPage from './routes/request.page.js'
 
 const server = express()
 
@@ -25,5 +29,9 @@ server.use(fontawesome())
  * Use seperate route files
  */
 server.use(startPage)
+server.use(newRequestPage)
+server.use(newRequestFollowUpPage)
+server.use(requestsPage)
+server.use(requestPage)
 
 server.listen(port, () => console.log(`Example app listening on port http://localhost:${port}/`))

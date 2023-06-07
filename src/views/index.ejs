@@ -13,15 +13,19 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <title><%- title %></title>
 
+    <link rel="preload" href="/styles/global.css" as="style" />
     <link rel="stylesheet" href="/styles/global.css" />
 
     <% for (let style of styles) { %>
+    <link rel="preload" href="/styles<%- style %>" as="style" />
     <link rel="stylesheet" href="/styles<%- style %>" />
     <% } %>
 
+    <link rel="preload" href="/scripts/global.js" as="script" />
     <script src="/scripts/global.js" defer></script>
 
     <% for (let script of scripts) { %>
+    <link rel="preload" href="/scripts<%- script %>" as="script" />
     <script src="/scripts<%- script %>" defer></script>
     <% } %>
 

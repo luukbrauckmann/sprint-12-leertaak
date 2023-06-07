@@ -97,7 +97,16 @@ body {
   color: var(--c-text);
 }
 
+
+/* BEM voorbeeld */
+
+/* = Blok element */
 .body {}
+
+/* = Zo geef je een state aan, zoals error, success. */
+.body--error {}
+
+/* = Children van het blok element */
 .body__header {}
 .body__content {}
 .body__footer {}

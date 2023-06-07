@@ -1,4 +1,5 @@
 import express from 'express'
+import { get } from '../lib/data-access.js'
 
 const requestsPage = express.Router()
 
@@ -11,6 +12,13 @@ const options = {
 	hostClass: 'requests'
 }
 
-requestsPage.get(options.path, async (request, response) => response.render('index', options))
+requestsPage.get(options.path, async (request, response) => {
+	const dataResponse = get()
+	dataResponse.then((data) => {
+		console.log(data);
+	})
+
+	return response.render('index', options)
+})
 
 export default requestsPage

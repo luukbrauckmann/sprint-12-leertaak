@@ -68,7 +68,6 @@ Default styling
 *::before,
 *::after {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -97,6 +96,11 @@ body {
   font-family: var(--font-family);
   color: var(--c-text);
 }
+
+.body {}
+.body__header {}
+.body__content {}
+.body__footer {}
 
 @media (min-width: 36rem) {
   :root {

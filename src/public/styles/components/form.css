@@ -1,0 +1,63 @@
+.form {
+	max-width: 800px;
+	margin-inline: auto;
+
+	font-size: 1.125rem;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1em;
+}
+
+.set {
+	border: none;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1em;
+}
+
+.set .field {
+	flex: 1;
+}
+
+.field {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: .5em;
+}
+
+.field--submit {
+	display: block;
+}
+
+.field--submit input[type="submit"] {
+	font-size: 1.3125rem;
+	line-height: 1.25;
+	padding: .8rem 1.2rem;
+	color: #fff;
+	background: var(--c-support-3);
+	border: 1px solid var(--c-support-3);
+}
+.field--submit input[type="submit"]:hover {
+	background: #e7391c;
+	border-color: #e03317;
+}
+
+.field__input {
+	font-size: 1.3125rem;
+	line-height: 1.25;
+	padding: .8rem 1.2rem;
+	color: #495057;
+
+	border: 1px solid #ced4da;
+}
+
+input,
+input::placeholder {
+	font-family: inherit;
+}
+
+@media (min-width: 36rem) {
+	.set {
+		flex-flow: row nowrap;
+	}
+}

@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2em;
+    margin: 2em 1em 0em 1em; 
+}
+
+.body__footer li{
+    margin-left: 1.5em;
 }
 
 .body__footer img{

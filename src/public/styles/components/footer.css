@@ -1,0 +1,15 @@
+.body__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.body__footer img{
+    align-self: center;
+    width: 20vw;
+}
+
+.footer-contact ul{
+    list-style-type: none;
+}

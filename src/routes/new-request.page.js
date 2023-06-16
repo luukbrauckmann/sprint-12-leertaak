@@ -17,10 +17,9 @@ newRequestPage.post(options.path, async (request, response) => {
 	const { body } = request
 
 	await create('LicenseRequests', body)
-		.then((response) => console.log(response))
-		.catch((error) => console.log(error))
+		.then((res) => console.log(res))
 
-	// response.render('index', options)
+	response.redirect('/demo-aanvragen')
 })
 
 export default newRequestPage

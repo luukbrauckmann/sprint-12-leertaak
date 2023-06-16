@@ -9,8 +9,6 @@ const apiUrl = 'https://api.pfp-dev.omniplan.nl/operations/api/v1/procurement'
 export const get = async (endpoint, query) => {
 	const url = `${apiUrl}/${endpoint}`
 
-	console.log(url)
-
 	const options = {
 		method: "GET"
 	}
@@ -29,12 +27,15 @@ export const get = async (endpoint, query) => {
 export const create = async (endpoint, data) => {
 	const url = `${apiUrl}/${endpoint}`
 
-	console.log(url)
-
 	const options = {
 		method: "POST",
+		headers: {
+			"Content-Type": "application/json"
+		},
 		body: JSON.stringify(data)
 	}
+
+	console.log(options.body);
 
 	return await fetch(url, options)
 		.then((response) => response)

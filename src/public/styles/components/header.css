@@ -1,0 +1,133 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    background-color: var(--c-grayscale-3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+}
+
+/* Logo */
+.header__logo {
+    display: inline-block;
+    width: 14rem;
+    color: var(--c-primary);
+    min-height: 4.5rem;
+    padding: 1rem;
+    margin-left: 10px;
+}
+
+/* Nav menu */
+.header__nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--c-grayscale-3);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.header__menu-link {
+    display: block;
+    padding: 20px;
+    color: var(--c-primary);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Menu Icon */
+.header__hamburger {
+    cursor: pointer;
+    float: right;
+    padding: 3rem 1rem;
+}
+
+.header__hamburger-line {
+    background: var(--c-primary);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.header__hamburger-line::before,
+.header__hamburger-line::after {
+    background: var(--c-primary);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header__hamburger-line::before {
+    top: 5px;
+}
+
+.header__hamburger-line::after {
+    top: -5px;
+}
+
+.header__side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+.header__side-menu:checked ~ .header__nav {
+    max-height: 100%;
+}
+
+.header__side-menu:checked ~ .header__hamburger .header__hamburger-line {
+    background: transparent;
+}
+
+.header__side-menu:checked ~ .header__hamburger .header__hamburger-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header__side-menu:checked ~ .header__hamburger .header__hamburger-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .header__nav {
+        max-height: none;
+        position: relative;
+        float: right;
+        width: auto;
+        background-color: transparent;
+        height: auto;
+    }
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__menu-item {
+        margin-right: 20px;
+    }
+
+    .header__menu-link {
+        padding: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .header__hamburger {
+        display: none;
+    }
+}

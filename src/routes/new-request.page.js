@@ -15,9 +15,11 @@ const options = {
 newRequestPage.get(options.path, async (request, response) => response.render('index', options))
 newRequestPage.post(options.path, async (request, response) => {
 	const { body } = request
-	const createResponse = create('', body)
-	createResponse.then((result) => console.log(result))
-	createResponse.catch((result) => console.log(result))
+
+	await create('LicenseRequests', body)
+		.then((response) => console.log(response))
+		.catch((error) => console.log(error))
+
 	// response.render('index', options)
 })
 

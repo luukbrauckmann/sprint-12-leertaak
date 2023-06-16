@@ -1,4 +1,4 @@
-const apiUrl = 'https://api.pfp-dev.omniplan.nl/operations/api/procurement/licenserequests'
+const apiUrl = 'https://api.pfp-dev.omniplan.nl/operations/api/v1/procurement'
 
 /**
  * Data getten
@@ -8,6 +8,8 @@ const apiUrl = 'https://api.pfp-dev.omniplan.nl/operations/api/procurement/licen
  */
 export const get = async (endpoint, query) => {
 	const url = `${apiUrl}/${endpoint}`
+
+	console.log(url)
 
 	const options = {
 		method: "GET"
@@ -27,13 +29,15 @@ export const get = async (endpoint, query) => {
 export const create = async (endpoint, data) => {
 	const url = `${apiUrl}/${endpoint}`
 
+	console.log(url)
+
 	const options = {
 		method: "POST",
 		body: JSON.stringify(data)
 	}
 
 	return await fetch(url, options)
-		.then((response) => response.json())
+		.then((response) => response)
 		.catch((error) => error)
 }
 

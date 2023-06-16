@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2em 1em 0em 1em; 
+    padding: 2em 1em 0em 1em; 
+    border-top: 1px solid #334f63;
 }
 
 .body__footer li{
@@ -17,3 +18,17 @@
 .footer-contact ul{
     list-style-type: none;
 }
+
+@media only screen and (max-width: 870px) {
+    .body__footer {
+      flex-direction: column;
+      gap: 1em;
+    }
+    .body__footer img{
+      width: 50vw;
+      align-self: baseline;
+    }
+    .footer-contact h2{
+      margin-left: -1em;
+    }
+  }

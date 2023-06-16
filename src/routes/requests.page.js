@@ -13,12 +13,9 @@ const options = {
 }
 
 requestsPage.get(options.path, async (request, response) => {
-	const dataResponse = get()
-	dataResponse.then((data) => {
-		console.log(data);
-	})
+	const requests = await get('LicenseRequests')
 
-	return response.render('index', options)
+	return response.render('index', { ...options, data: { requests } })
 })
 
 export default requestsPage

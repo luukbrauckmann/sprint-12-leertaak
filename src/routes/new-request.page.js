@@ -15,10 +15,11 @@ const options = {
 newRequestPage.get(options.path, async (request, response) => response.render('index', options))
 newRequestPage.post(options.path, async (request, response) => {
 	const { body } = request
-	const createResponse = create('', body)
-	createResponse.then((result) => console.log(result))
-	createResponse.catch((result) => console.log(result))
-	// response.render('index', options)
+
+	await create('LicenseRequests', body)
+		.then((res) => console.log(res))
+
+	response.redirect('/demo-aanvragen')
 })
 
 export default newRequestPage

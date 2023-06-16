@@ -1,4 +1,4 @@
-const apiUrl = 'https://api.pfp-dev.omniplan.nl/operations/api/procurement/licenserequests'
+const apiUrl = 'https://api.pfp-dev.omniplan.nl/operations/api/v1/procurement'
 
 /**
  * Data getten
@@ -29,11 +29,16 @@ export const create = async (endpoint, data) => {
 
 	const options = {
 		method: "POST",
+		headers: {
+			"Content-Type": "application/json"
+		},
 		body: JSON.stringify(data)
 	}
 
+	console.log(options.body);
+
 	return await fetch(url, options)
-		.then((response) => response.json())
+		.then((response) => response)
 		.catch((error) => error)
 }
 

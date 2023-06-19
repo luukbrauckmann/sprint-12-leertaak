@@ -1,13 +1,38 @@
-<section class="section">
-  <header class="section__header">
-    <h1>
-      <span><%- icon("home") %></span>
-      <span>Aanvraag</span>
-    </h1>
-  </header>
-  <div class="section__content">
-    <p>Dit is een voorbeeld</p>
-  </div>
-</section>
+<article class="article__header">
+  <h2>Aanvraag</h2>
+  <h3>Luuk Brauckmann</h3>
+</article>
+
+<form class="article__content">
+
+      <label for="first-name">Voornaam</label>
+      <input id="first-name" type="text" />
+
+
+      <label for="surname-name">Achternaam</label>
+      <input id="surname-name" type="text" />
+
+
+      <label for="email-form">Email</label>
+      <input id="email" type="email" />
+
+
+      <label for="company-name">Bedrijfsnaam</label>
+      <input id="company-name" type="text" />
+
+
+      <label for="phone-number-form">Telefoonnummer</label>
+      <input id="phone-number" type="phone-number" />
+
+</form>
+
+    <button class="approve-button" type="button">
+       Goedkeuren
+    </button>
+
+    <button class="disapprove-button" type="button">
+      Afkeuren
+   </button>
+
 
 <pre><%- JSON.stringify(data.request) %></pre>

@@ -7,3 +7,11 @@
 .section__content {
 	padding: 1.5rem .5rem;
 }
+
+.message {
+	text-align: center;
+}
+
+.message .reqeust-message-icon {
+	font-size: 10rem;
+}

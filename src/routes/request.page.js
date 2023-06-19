@@ -14,8 +14,8 @@ const options = {
 
 requestPage.get(options.path, async (request, response) => {
 	const id = request.params[0]
-	const dataRequest = await get(`LicenseRequests/${id}`)
-	return response.render('index', { ...options, data: { request: dataRequest } })
+	const data = await get(`LicenseRequests/${id}`)
+	return response.render('index', { ...options, data: { request: data } })
 })
 
 export default requestPage

@@ -1,7 +1,4 @@
 .form {
-	max-width: 800px;
-	margin-inline: auto;
-
 	font-size: 1.125rem;
 	display: flex;
 	flex-flow: column nowrap;

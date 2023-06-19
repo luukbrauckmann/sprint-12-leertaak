@@ -1,0 +1,9 @@
+.new-request {
+	max-width: 800px;
+	margin-inline: auto;
+}
+
+.section__header,
+.section__content {
+	padding: 1.5rem .5rem;
+}

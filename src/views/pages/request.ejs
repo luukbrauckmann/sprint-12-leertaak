@@ -1,38 +1,39 @@
-<article class="article__header">
-  <h2>Aanvraag</h2>
-  <h3>Luuk Brauckmann</h3>
-</article>
+<article class="atricle__body">
+ <article class="article__header">
+   <h2>Aanvraag</h2>
+   <h3>Luuk Brauckmann</h3>
+ </article>
 
-<form class="article__content">
+ <form class="article__content">
 
-      <label for="first-name">Voornaam</label>
-      <input id="first-name" type="text" />
-
-
-      <label for="surname-name">Achternaam</label>
-      <input id="surname-name" type="text" />
+         <label for="first-name">Voornaam</label>
+         <input id="first-name" type="text" />
 
 
-      <label for="email-form">Email</label>
-      <input id="email" type="email" />
+         <label for="surname-name">Achternaam</label>
+         <input id="surname-name" type="text" />
 
 
-      <label for="company-name">Bedrijfsnaam</label>
-      <input id="company-name" type="text" />
+         <label for="email-form">Email</label>
+         <input id="email" type="email" />
 
 
-      <label for="phone-number-form">Telefoonnummer</label>
-      <input id="phone-number" type="phone-number" />
+         <label for="company-name">Bedrijfsnaam</label>
+         <input id="company-name" type="text" />
 
-</form>
 
-    <button class="approve-button" type="button">
-       Goedkeuren
+         <label for="phone-number-form">Telefoonnummer</label>
+         <input id="phone-number" type="phone-number" />
+
+ </form>
+ <div class="request-buttons">
+      <button class="approve-button" type="button">
+          Goedkeuren
+      </button>
+
+      <button class="disapprove-button" type="button">
+         Afkeuren
     </button>
-
-    <button class="disapprove-button" type="button">
-      Afkeuren
-   </button>
-
-
-<pre><%- JSON.stringify(data.request) %></pre>
+ </div>
+</article>
+<!-- <pre><%- JSON.stringify(data.request) %></pre> -->

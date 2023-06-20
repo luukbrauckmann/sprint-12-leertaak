@@ -1,0 +1,163 @@
+    .table {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      overflow: hidden;
+      width: 100%;
+      padding: 3rem;
+    }
+
+    .list {
+      display: flex;
+      background: #22B5E8;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .cell {
+      flex-basis: 20%;
+      padding: 1.625em;
+      text-align: left;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .data {
+      flex-basis: 20%;
+      padding: 1.625em;
+      text-align: left;
+      color: #000;
+      font-size: 14px;
+    }
+
+    .data span {
+      padding: 10px 20px;
+      border-radius: 2rem;
+      border: 0;
+    }
+
+    .data span.in-afwachting {
+      background: #FFE8CC;
+      color: #FFAF00;
+      border: 2px solid;
+      border-color: #FFAF00;
+    }
+
+    .data span.goedgekeurd {
+      background: #C6FFBA;
+      color: #3AC47D;
+      border: 2px solid;
+      border-color: #3AC47D;
+    }
+
+    .data span.afgekeurd {
+      background: #F0B9B9;
+      color: #E82222;
+      border: 2px solid;
+      border-color: #E82222;
+    }
+
+    .data:nth-child(5) button {
+      background: #22B5E8;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 2rem;
+      border: 0;
+    }
+
+    .data:nth-child(5) button:hover {
+      cursor: pointer;
+    }
+
+    .row:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .row:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    @media screen and (max-width: 700px) {
+      .list {
+        display: none;
+      }
+
+      .row {
+        flex-direction: column;
+        border-bottom: 3px solid #e1e5e9;
+        margin-bottom: .625em;
+      }
+
+      .cell,
+      .data {
+        flex-basis: auto;
+        padding: 0.625em;
+        font-size: 14px;
+        text-align: left;
+      }
+
+      .data[data-label]::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #656971;
+      }
+
+      .row:nth-child(even),
+      .row:nth-child(odd) {
+        background-color: transparent;
+      }
+
+      .data[data-label]:not([data-label="Status"]) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .data[data-label]:not([data-label="Status"]) p {
+        margin: 0;
+      }
+
+      .data[data-label="Status"] {
+        flex-basis: auto;
+        padding: 0.625em;
+        text-align: left;
+        color: #000;
+        font-size: 14px;
+      }
+
+      .data[data-label="Status"] span {
+        padding: 10px 20px;
+        border-radius: 2rem;
+        border: 0;
+        display: inline-block;
+        margin-top: 0.625em;
+        width: auto;
+      }
+
+      .data[data-label="Autoriseren"] {
+        flex-basis: auto;
+        padding: 0.625em;
+        text-align: left;
+        color: #000;
+        font-size: 14px;
+      }
+
+      .data[data-label="Autoriseren"] button {
+        margin-top: 0.625em;
+        width: 100%;
+        background: #22B5E8;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 2rem;
+        border: 0;
+      }
+    }

@@ -4,11 +4,12 @@
     justify-content: space-between;
     padding: 2em 1em 0em 1em; 
     border-top: 1px solid #334f63;
+    margin: 1.4rem 1.4rem 1.4rem 1.4rem;
 }
 
 .body__footer img{
     align-self: center;
-    width: 20vw;
+    width: 18vw;
 }
 
 .footer-contact ul{

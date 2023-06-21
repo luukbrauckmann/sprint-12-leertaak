@@ -5,6 +5,8 @@
   </picture>
 </h1>
 
+![image](https://github.com/luukbrauckmann/sprint-12-leertaak/assets/47314813/a4a8af82-033b-4a8e-8f69-2cd594b4146e)
+
 <h2 id="inhoud">📦 Inhoud</h2>
 
 1. [Beschrijving](#%E2%84%B9%EF%B8%8F-beschrijving)

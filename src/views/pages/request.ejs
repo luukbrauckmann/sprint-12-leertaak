@@ -1,31 +1,65 @@
-<article class="atricle__body">
- <article class="article__header">
+<section class="section">
+ <section class="section__header">
    <h2>Aanvraag</h2>
    <h3>Luuk Brauckmann</h3>
- </article>
+ </section>
 
- <form class="article__content">
+ <div class="section__content">
+  <form class="form" method="post">
+    <fieldset class="set">
+      <div class="field">
+        <label class="field__label" for="firstName">Voornaam</label>
+        <input
+          class="field__input"
+          type="text"
+          name="firstName"
+          id="firstName"
+          value="<%= data.request.firstName %>"
+          required />
+      </div>
+      <div class="field">
+        <label class="field__label" for="lastName">Achternaam</label>
+        <input
+          class="field__input"
+          type="text"
+          name="lastName"
+          id="lastName"
+          value="<%= data.request.lastName %>"
+          required />
+      </div>
+    </fieldset>
+    <div class="field">
+      <label class="field__label" for="emailAddress">Email</label>
+      <input
+        class="field__input"
+        type="email"
+        name="emailAddress"
+        id="emailAddress"
+        value="<%= data.request.emailAddress %>"
+        required />
+    </div>
+    <div class="field">
+      <label class="field__label" for="organisationName">Bedrijf</label>
+      <input
+        class="field__input"
+        type="text"
+        name="organisationName"
+        id="organisationName"
+        value="<%= data.request.organisationName %>" 
+        />
+    </div>
+    <div class="field">
+      <label class="field__label" for="phoneNumber">Telefoonnummer</label>
+      <input
+        class="field__input"
+        type="text"
+        name="phoneNumber"
+        id="phoneNumber"
+        value="<%= data.request.phoneNumber %>" 
+        required />
+    </div>
 
-         <label for="first-name">Voornaam</label>
-         <input id="first-name" type="text" />
 
-
-         <label for="surname-name">Achternaam</label>
-         <input id="surname-name" type="text" />
-
-
-         <label for="email-form">Email</label>
-         <input id="email" type="email" />
-
-
-         <label for="company-name">Bedrijfsnaam</label>
-         <input id="company-name" type="text" />
-
-
-         <label for="phone-number-form">Telefoonnummer</label>
-         <input id="phone-number" type="phone-number" />
-
- </form>
  <div class="request-buttons">
       <button class="approve-button" type="button">
           Goedkeuren
@@ -36,4 +70,4 @@
     </button>
  </div>
 </article>
-<!-- <pre><%- JSON.stringify(data.request) %></pre> -->
+

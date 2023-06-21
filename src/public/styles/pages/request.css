@@ -1,25 +1,76 @@
-.article__header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 2em 2em 3em 1em;
+.section{
+    max-width: 800px;
+    margin-inline: auto;
 }
 
-.article__content{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    
+.section__header{
+    margin: 2em 0 2em 0;
 }
 
-.article__content input{
-    height: 2em;
-    margin: 0 1.5em 1em 1.5em;
-    color: #334F63;
+.form {
+	font-size: 1.125rem;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1em;
 }
 
-.article__content label{
-    margin: 0 0 0.5em 1em;
+.set {
+	border: none;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1em;
+}
+
+.set .field {
+	flex: 1;
+}
+
+.field {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: .5em;
+}
+.field--submit {
+	display: block;
+}
+
+.field--submit input[type="submit"] {
+	font-size: 1.3125rem;
+	line-height: 1.25;
+	padding: .8rem 1.2rem;
+	color: #fff;
+	background: var(--c-support-3);
+	border: 1px solid var(--c-support-3);
+}
+.field--submit input[type="submit"]:hover {
+	background: #e7391c;
+	border-color: #e03317;
+}
+
+.field__input {
+	font-size: 1.3125rem;
+	line-height: 1.25;
+	padding: .8rem 1.2rem;
+	color: #495057;
+
+	border: 1px solid #ced4da;
+}
+
+input,
+input::placeholder {
+	font-family: inherit;
+}
+
+@media (min-width: 36rem) {
+	.set {
+		flex-flow: row nowrap;
+	}
+}
+
+@media (max-width: 860px) {
+    .section{
+        margin: 0 1em 0 1em;
+    }
 }
 
 .request-buttons{
@@ -27,7 +78,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
-    margin: 0 1.3em 2em 1.3em;
+    margin: 1em 0 2em 0;
 }
 
 .approve-button{
@@ -54,23 +105,4 @@
 .disapprove-button:hover{
     background-color: #CC1B1B;
     cursor: pointer;
-}
-
-@media only screen and (min-width: 870px) {
-    .atricle__body{
-        display: flex;
-        flex-direction: column;
-        margin: 0 10vw 0 20vw;
-    }
-
-    .request-buttons{
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-@media only screen and (min-width: 870px) {
-    .atricle__body{
-        margin: 0 20vw 0 20vw;
-    }
 }

@@ -4,7 +4,7 @@ import { create } from "../lib/data-access.js"
 const newRequestPage = express.Router()
 
 const options = {
-	path: '/demo-aanvragen',
+	path: '/',
 	title: 'Demo aanvragen',
 	template: 'new-request.ejs',
 	styles: ['/pages/new-request.css', '/components/form.css'],

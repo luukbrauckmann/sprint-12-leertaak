@@ -4,7 +4,7 @@ import { get } from "../lib/data-access.js"
 const startPage = express.Router()
 
 const options = {
-	path: '/',
+	path: '/start',
 	title: 'Start',
 	template: 'start.ejs',
 	styles: ['/pages/start.css'],

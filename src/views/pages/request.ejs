@@ -1,7 +1,7 @@
 <section class="section">
  <section class="section__header">
    <h2>Aanvraag</h2>
-   <h3>Luuk Brauckmann</h3>
+   <h3><%= data.request.firstName %> <%= data.request.lastName %>, <%= data.request.organisationName %></h3>
  </section>
 
  <div class="section__content">
@@ -45,7 +45,7 @@
         type="text"
         name="organisationName"
         id="organisationName"
-        value="<%= data.request.organisationName %>" 
+        value="<%= data.request.organisationName %>"
         />
     </div>
     <div class="field">
@@ -55,7 +55,7 @@
         type="text"
         name="phoneNumber"
         id="phoneNumber"
-        value="<%= data.request.phoneNumber %>" 
+        value="<%= data.request.phoneNumber %>"
         required />
     </div>
 

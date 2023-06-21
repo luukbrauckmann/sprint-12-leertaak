@@ -45,9 +45,9 @@
       border: 0;
     }
 
-    .data span.in-afwachting {
+    .data span.Submitted {
       background: #FFE8CC;
-      color: #FFAF00;
+      color: #000;
       border: 2px solid;
       border-color: #FFAF00;
     }
@@ -66,16 +66,16 @@
       border-color: #E82222;
     }
 
-    .data:nth-child(5) button {
+    .data:nth-child(5) a {
       background: #22B5E8;
       color: #fff;
       font-size: 14px;
-      padding: 10px 20px;
+      padding: 12px 20px;
       border-radius: 2rem;
       border: 0;
     }
 
-    .data:nth-child(5) button:hover {
+    .data:nth-child(5) a:hover {
       cursor: pointer;
     }
 
@@ -158,7 +158,7 @@
         font-size: 14px;
       }
 
-      .data[data-label="Autoriseren"] button {
+      .data[data-label="Autoriseren"] a {
         margin-top: 0.625em;
         width: 100%;
         background: #22B5E8;
@@ -167,5 +167,7 @@
         padding: 10px 20px;
         border-radius: 2rem;
         border: 0;
+        display: inline-block;
+        text-align: center;
       }
     }

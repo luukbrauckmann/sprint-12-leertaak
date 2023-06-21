@@ -20,7 +20,7 @@
       ><p><%- request.organisationName %></p></div
     >
     <div class="data" data-label="Status"
-      ><p><span class="in-afwachting">in afwachting</span></p></div
+      ><p><span class="<%- request.approvalStatus %>">In afwachting</span></p></div
     >
     <div class="data" data-label="Autoriseren"
       ><a href="/aanvragen/<%- request.requestNumber %>">Naar aanvraag</a></div

@@ -54,14 +54,14 @@
 
     .data span.goedgekeurd {
       background: #C6FFBA;
-      color: #3AC47D;
+      color: #000000;
       border: 2px solid;
       border-color: #3AC47D;
     }
 
     .data span.afgekeurd {
       background: #F0B9B9;
-      color: #E82222;
+      color: #000000;
       border: 2px solid;
       border-color: #E82222;
     }

@@ -40,7 +40,7 @@ newRequestPage.post(options.path, async (request, response) => {
 	const data = await create('LicenseRequests', body)
 	let message = "error"
 	if (data.status === 200) message = "success"
-	response.redirect(`/demo-aanvragen?message=${message}`)
+	response.redirect(`${options.path}?message=${message}`)
 })
 
 export default newRequestPage

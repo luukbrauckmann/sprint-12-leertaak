@@ -39,6 +39,7 @@ Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal
 - [ExpressJS](https://expressjs.com/)
 - [EJS](https://ejs.co/)
 - [nodemon](https://nodemon.io/)
+- [Figma bestand](https://www.figma.com/file/WAmjlsEgBonvWY3Fy8BT40/Omniplan?type=design&node-id=1%3A10&mode=design&t=yqqtsUHCUUGDYEyK-1)
 
 <h2 id="licenties">🪪 Licenties</h2>
 
